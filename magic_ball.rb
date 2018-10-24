@@ -1,4 +1,4 @@
-def reed_from_file(file_name)
+def read_from_file(file_name)
   current_path = File.dirname(__FILE__)
   file_path = "#{current_path}/data/#{file_name}.txt"
   begin
@@ -11,8 +11,8 @@ def reed_from_file(file_name)
   content
 end
 
-puts reed_from_file("greeting").sample
+puts read_from_file("greeting").sample
 sleep(3)
 puts
-puts reed_from_file("answers").sample
+puts read_from_file("answers").sample
 
